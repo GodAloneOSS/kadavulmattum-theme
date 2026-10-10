@@ -48,6 +48,7 @@ if (!defined('ABSPATH')) exit;
         <a href="https://www.facebook.com/thameemnf" target="_blank" rel="noopener" aria-label="Facebook"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/facebook.png')" aria-hidden="true"></span></a>
         <a href="https://x.com/thameemnf" target="_blank" rel="noopener" aria-label="X"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/x.png')" aria-hidden="true"></span></a>
         <a href="https://github.com/kadavulmattum" target="_blank" rel="noopener" aria-label="GitHub"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/github.svg')" aria-hidden="true"></span></a>
+      <a href="https://www.pinterest.com/kadavulmattum" target="_blank" rel="noopener" aria-label="Quran Picture Message"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/pinterest.svg')" aria-hidden="true"></span></a>
       </div>
     </div>
   </div>
