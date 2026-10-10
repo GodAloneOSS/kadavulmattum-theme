@@ -71,22 +71,22 @@ get_header();
 
       <div class="grid rc-grid reveal">
         <div class="card rc-stat">
-          <div class="rc-stat-icon">🌙</div>
+          <div class="rc-stat-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/ramadan-calculator/rc-icon-first-fasting-day-v2.png" alt="First Fasting Day" loading="lazy"></div>
           <div class="rc-stat-label">முதல் நோன்பு நாள்</div>
           <div class="rc-stat-val" id="rcFirstDay">—</div>
         </div>
         <div class="card rc-stat">
-          <div class="rc-stat-icon">🌗</div>
+          <div class="rc-stat-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/ramadan-calculator/rc-icon-last-fasting-day-v2.png" alt="Last Fasting Day" loading="lazy"></div>
           <div class="rc-stat-label">கடைசி நோன்பு நாள்</div>
           <div class="rc-stat-val" id="rcLastDay">—</div>
         </div>
         <div class="card rc-stat">
-          <div class="rc-stat-icon">✨</div>
-          <div class="rc-stat-label">10 அருள் இரவுகள் தொடக்கம்</div>
+          <div class="rc-stat-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/ramadan-calculator/rc-icon-ten-nights-v2.png" alt="Begin the 10 Blessed Nights" loading="lazy"></div>
+          <div class="rc-stat-label">கடைசி 10 இரவுகள் தொடக்கம்/div>
           <div class="rc-stat-val" id="rcTenNights">—</div>
         </div>
         <div class="card rc-stat rc-stat-special">
-          <div class="rc-stat-icon">🌟</div>
+          <div class="rc-stat-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/ramadan-calculator/rc-icon-night-of-destiny-v2.png" alt="Night of Destiny" loading="lazy"></div>
           <div class="rc-stat-label">விதியின் இரவு</div>
           <div class="rc-stat-val" id="rcNightOfDestiny">—</div>
         </div>
@@ -168,6 +168,7 @@ get_header();
 .rc-stat{padding:26px 18px;text-align:center;border:1px solid var(--line);transition:transform .25s ease,box-shadow .25s ease}
 .rc-stat:hover{transform:translateY(-3px);box-shadow:var(--shadow-sm)}
 .rc-stat-icon{font-size:30px;margin-bottom:10px}
+.rc-stat-icon img{max-width:100%;max-height:82px;width:auto;height:auto;object-fit:contain;display:block;margin:0 auto;filter:drop-shadow(0 2px 4px rgba(0,0,0,.12))}
 .rc-stat-label{font-family:var(--font-display);font-size:13px;color:var(--ink-soft);margin-bottom:10px;letter-spacing:.01em}
 .rc-stat-val{font-variant-numeric:tabular-nums;font-weight:700;font-size:clamp(15px,2vw,17.5px);color:var(--ink)}
 .rc-stat-special{background:linear-gradient(180deg,rgba(212,175,55,.16),var(--panel-2));
