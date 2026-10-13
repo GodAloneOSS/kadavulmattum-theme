@@ -27,7 +27,7 @@ if (!defined('ABSPATH')) exit;
     <div>
       <h4>வளங்கள்</h4>
       <ul>
-        <li><a href="https://godalone.in/library/" target="_blank" rel="noopener">புத்தகங்கள்</a></li>
+        <li><a href="https://kadavulmattum.org/library/" target="_blank" rel="noopener">புத்தகங்கள்</a></li>
         <li><a href="<?php echo esc_url(home_url('/links/')); ?>">பயனுள்ள இணைப்புகள்</a></li>
         <li><a href="<?php echo esc_url(home_url('/utilities/')); ?>">பயன்பாடுகள்</a></li>
         <li><a href="<?php echo esc_url(home_url('/charity/')); ?>">சரணடைந்தவர்கள் தர்ம ஸ்தாபனம்</a></li>
