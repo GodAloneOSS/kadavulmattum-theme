@@ -31,6 +31,7 @@ if (!defined('ABSPATH')) exit;
         <li><a href="<?php echo esc_url(home_url('/links/')); ?>">பயனுள்ள இணைப்புகள்</a></li>
         <li><a href="<?php echo esc_url(home_url('/utilities/')); ?>">பயன்பாடுகள்</a></li>
         <li><a href="<?php echo esc_url(home_url('/charity/')); ?>">சரணடைந்தவர்கள் தர்ம ஸ்தாபனம்</a></li>
+        <li><a href="<?php echo esc_url(home_url('/faq/')); ?>">அடிக்கடி கேட்கப்படும் கேள்விகள்</a></li>
       </ul>
     </div>
     <div>
@@ -42,11 +43,11 @@ if (!defined('ABSPATH')) exit;
         <li><a href="<?php echo esc_url(home_url('/contact/')); ?>">தொடர்பு கொள்ள</a></li>
       </ul>
       <div class="gf-social">
-        <a href="https://whatsapp.com/channel/0029VaFhw4kK0IBpt9DOFC3G" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/whatsapp.png')" aria-hidden="true"></span></a>
-        <a href="https://t.me/kadavulmattum_org" target="_blank" rel="noopener" aria-label="Telegram"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/telegram.png')" aria-hidden="true"></span></a>
-        <a href="https://www.youtube.com/kadavulmattum" target="_blank" rel="noopener" aria-label="YouTube"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/youtube.png')" aria-hidden="true"></span></a>
-        <a href="https://www.facebook.com/thameemnf" target="_blank" rel="noopener" aria-label="Facebook"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/facebook.png')" aria-hidden="true"></span></a>
-        <a href="https://x.com/thameemnf" target="_blank" rel="noopener" aria-label="X"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/x.png')" aria-hidden="true"></span></a>
+        <a href="https://whatsapp.com/channel/0029VaFhw4kK0IBpt9DOFC3G" target="_blank" rel="noopener" aria-label="WhatsApp"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/whatsapp-v2.svg')" aria-hidden="true"></span></a>
+        <a href="https://t.me/kadavulmattum_org" target="_blank" rel="noopener" aria-label="Telegram"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/telegram-v2.svg')" aria-hidden="true"></span></a>
+        <a href="https://www.youtube.com/kadavulmattum" target="_blank" rel="noopener" aria-label="YouTube"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/youtube-v2.svg')" aria-hidden="true"></span></a>
+        <a href="https://www.facebook.com/thameemnf" target="_blank" rel="noopener" aria-label="Facebook"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/facebook-v2.svg')" aria-hidden="true"></span></a>
+        <a href="https://x.com/thameemnf" target="_blank" rel="noopener" aria-label="X"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/x-v2.svg')" aria-hidden="true"></span></a>
         <a href="https://github.com/kadavulmattum" target="_blank" rel="noopener" aria-label="GitHub"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/github.svg')" aria-hidden="true"></span></a>
       <a href="https://www.pinterest.com/kadavulmattum" target="_blank" rel="noopener" aria-label="Quran Picture Message"><span class="gf-icon" style="--gf-icon-src:url('<?php echo esc_url(get_template_directory_uri()); ?>/images/social/pinterest.svg')" aria-hidden="true"></span></a>
       </div>
@@ -55,7 +56,8 @@ if (!defined('ABSPATH')) exit;
   <div class="gf-bottom">
     <p class="duaa">رَبَّنا تَقَبَّل مِنّا</p>
     <p class="cc">&copy; <?php echo esc_html(date('Y')); ?> Kadavulmattum.org &middot; <span class="gf-oss"><a href="https://github.com/kadavulmattum" target="_blank" rel="noopener">Open Source</a> <span class="gf-heart">❤️</span></span></p>
-    <p class="praise">All Praise Is Due To GOD Alone</p>
+    <p class="gf-legal" style="margin:6px 0;font-size:.9rem"><a href="<?php echo esc_url(home_url('/about')); ?>">எங்களைப் பற்றி</a> &nbsp;·&nbsp; <a href="<?php echo esc_url(home_url('/privacy-policy')); ?>">தனிப்பட்ட தகவல் கொள்கை</a> &nbsp;·&nbsp; <a href="<?php echo esc_url(home_url('/copyright')); ?>">பதிவுரிமை</a></p>
+  <p class="praise">All Praise Is Due To GOD Alone</p>
   </div>
 </footer>
 
