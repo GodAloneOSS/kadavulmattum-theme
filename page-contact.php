@@ -18,7 +18,7 @@ get_header();
   box-shadow:0 0 0 3px rgba(216,180,94,.25)}
 .contact-form .field{margin-bottom:18px}
 .contact-form .req{color:#e0685f}
-#contactHint{display:none;padding:14px;border-radius:10px;text-align:center;margin-top:14px;font-weight:600;background:linear-gradient(135deg,#4ade80,#22c55e);color:#fff}
+#contactHint{display:none;padding:14px;border-radius:10px;text-align:center;margin-top:14px;font-weight:600;background:linear-gradient(135deg,#F7D97E,#E5B94E);color:#fff}
 #contactHint.show{display:block}
 #contactHint.err{background:linear-gradient(135deg,#ef4444,#dc2626)}
 .contact-info-card{background:var(--panel-2);padding:22px;border-radius:var(--radius);border:1px solid var(--line);
@@ -34,7 +34,7 @@ get_header();
   <div class="wrap">
     <div class="crumb">Kadavulmattum.org</div>
     <h1>📞 தொடர்பு கொள்ள</h1>
-    <p style="color:var(--ink-soft);max-width:640px;margin:14px auto 0">உங்களிடமிருந்து கேட்க விரும்புகிறோம். குர்ஆன் பற்றிய கேள்விகள் இருந்தாலோ, உதவி தேவைப்பட்டாலோ, அல்லது உங்கள் கருத்துக்களைப் பகிர விரும்பினாலோ, இன்ஷா அல்லாஹ், தொடர்பு கொள்ளுங்கள்.</p>
+    <p style="color:var(--ink-soft);max-width:640px;margin:14px auto 0">குர்ஆன் பற்றி கேள்வி உள்ளதா, அல்லது தளத்தைப் பயன்படுத்த உதவி தேவையா? எங்களுக்கு எழுதுங்கள். ஒவ்வொரு செய்தியையும் நாங்கள் படிக்கிறோம், இன்ஷா அல்லாஹ்.</p>
   </div>
 </div>
 
@@ -112,7 +112,7 @@ get_header();
 <section class="verse">
   <div class="wrap">
     <p class="ar">وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ الدَّاعِ إِذَا دَعَانِ</p>
-    <blockquote>என் அடியார்கள் என்னைப் பற்றி உன்னிடம் கேட்டால், நிச்சயமாக நான் அருகில் இருக்கிறேன். பிரார்த்திப்பவன் பிரார்த்திக்கும்போது அவனுடைய பிரார்த்தனைக்குப் பதிலளிக்கிறேன்.</blockquote>
+    <blockquote>என்னுடைய ஊழியர்கள் என்னைப்பற்றி உம்மிடம் கேட்கும் போது, நான் எப்போதும் அருகிலேயே உள்ளேன். அவர்கள் என்னிடம் பிரார்த்திக்கும் பொழுது அவர்களுடைய பிரார்த்தனைக்கு நான் பதிலளிக்கின்றேன். வழிநடத்தப்பட்டவர்களாக இருக்கும் பொருட்டு, மக்கள் எனக்குப் பதிலளிக்கவும் என் மீது நம்பிக்கை கொள்ளவும் வேண்டும்.</blockquote>
     <cite>குர்ஆன் 2:186</cite>
   </div>
 </section>
