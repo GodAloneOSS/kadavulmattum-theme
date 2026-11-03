@@ -82,7 +82,7 @@ get_header();
         </div>
         <div class="card rc-stat">
           <div class="rc-stat-icon"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/ramadan-calculator/rc-icon-ten-nights-v2.png" alt="Begin the 10 Blessed Nights" loading="lazy"></div>
-          <div class="rc-stat-label">கடைசி 10 இரவுகள் தொடக்கம்/div>
+          <div class="rc-stat-label">கடைசி 10 இரவுகள் தொடக்கம்</div>
           <div class="rc-stat-val" id="rcTenNights">—</div>
         </div>
         <div class="card rc-stat rc-stat-special">
@@ -148,11 +148,11 @@ get_header();
 .rc-btnrow .btn{flex:1 1 200px}
 .rc-msg{margin-top:14px;padding:12px 14px;border-radius:10px;font-size:14.5px;
   background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.35);color:#f87171}
-.rc-msg.rc-msg-loading{background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.35);color:var(--ink-soft)}
+.rc-msg.rc-msg-loading{background:rgba(229,185,78,.1);border-color:rgba(229,185,78,.35);color:var(--ink-soft)}
 .rc-suggestions{margin-top:14px;display:flex;flex-direction:column;gap:8px}
 .rc-suggestion{text-align:left;padding:12px 14px;border-radius:10px;border:1px solid var(--line);
   background:var(--bg-3);color:var(--ink);cursor:pointer;font-family:var(--font-body);font-size:15px}
-.rc-suggestion:hover{border-color:var(--gold);background:rgba(34,197,94,.08)}
+.rc-suggestion:hover{border-color:var(--gold);background:rgba(229,185,78,.08)}
 .rc-suggestion small{display:block;color:var(--muted);margin-top:2px;font-size:13px}
 
 .rc-results{max-width:900px;margin:0 auto}
