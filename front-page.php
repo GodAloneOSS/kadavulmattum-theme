@@ -7,6 +7,7 @@
  * existing homepage, restyled to the GodAlone Premium design system.
  */
 if (!defined('ABSPATH')) exit;
+if (!(isset($_GET['oldhome']) && $_GET['oldhome'] === '1')) { get_header(); get_template_part('part-home-new'); get_footer(); return; }
 get_header();
 ?>
 
@@ -15,10 +16,10 @@ get_header();
     <div class="kicker">கடவுள்மட்டும் &middot; GodAlone</div>
     <p class="bism">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
     <p class="bism-ta">கடவுளின் பெயரால், மிக்க அருளாளர், மிக்க கருணையாளர்.</p>
-    <h1>கடவுளுக்கு மட்டும் அடிபணிதல் (இஸ்லாம்)<br>மனிதகுலத்திற்கான கடவுளின் இறுதி செய்தி</h1>
+    <h1>கடவுளுக்கு மட்டும் சரணடைதல் (இஸ்லாம்)<br>மனிதகுலத்திற்கான கடவுளின் இறுதி செய்தி</h1>
     <p class="hero-sub">கடவுள்-ஆல் அங்கீகரிக்கப்பட்ட ஒரே மார்க்கம் "சரணடைதல்" ஆகும். (குர்ஆன் 3:19) &mdash;
     "சரணடைதல்" என்பது ஒரு பெயர் அல்ல; இது ஆன்மாவின் முழுமையான பக்தியையும் கடவுளுக்கு மட்டும்
-    அடிபணிவதையும் பிரதிபலிக்கும் ஒரு விளக்கமாகும்.</p>
+    சரணடைவதையும் பிரதிபலிக்கும் ஒரு விளக்கமாகும்.</p>
     <div class="hero-cta">
       <a class="btn btn-gold" href="https://godalone.in/quran/">💻 குர்ஆன் ஆன்லைன் படிக்க</a>
       <a class="btn btn-ghost" href="#explore">🔎 மேலும் அறிய</a>
@@ -34,7 +35,7 @@ get_header();
     </div>
     <article class="article" style="padding:0">
       <p>"சரணடைதல்" (அரபு மொழியில் இஸ்லாம்) என்பது ஒரு பெயர் அல்ல. இது ஆன்மாவின் முழுமையான
-      பக்தியையும் கடவுளுக்கு மட்டும் அடிபணிவதையும் பிரதிபலிக்கும் ஒரு விளக்கமாகும். பழைய ஏற்பாடு,
+      பக்தியையும் கடவுளுக்கு மட்டும் சரணடைவதையும் பிரதிபலிக்கும் ஒரு விளக்கமாகும். பழைய ஏற்பாடு,
       புதிய ஏற்பாடு மற்றும் இறுதி ஏற்பாடு &ndash; குர்ஆன் உள்ளிட்ட கடவுளின் அனைத்து வேதங்களின் இது
       முதல் கட்டளை ஆகும்.</p>
       <p>சரணடைதோர்கள் முழு மனதுடன் கடவுளுக்கு மட்டும் வணங்குவதின் மூலமும், மறுஉலகின் மீது நம்பிக்கை
@@ -75,6 +76,41 @@ get_header();
   </div>
 </section>
 
+<?php if (function_exists('km_pm_daily') && ($pm = km_pm_daily('t'))) : ?>
+<section class="blk newhere">
+<div class="wrap">
+<div class="sec-head">
+<span class="kicker reveal">🌱 புதியவரா?</span>
+<h2 class="reveal">இங்கிருந்து தொடங்குங்கள்</h2>
+<p class="reveal">புதியவர்களுக்கும் ஆர்வமுள்ளவர்களுக்குமான சிறிய, எளிய பக்கங்கள்.</p>
+</div>
+<div class="grid grid-3" style="max-width:1100px;margin:0 auto">
+<a class="card reveal" href="<?php echo esc_url(home_url('/is-this-for-me')); ?>"><span class="ico">🤔</span><h3>இது எனக்கானதா?</h3><p>நீங்கள் யாராக இருந்தாலும் உங்களை வரவேற்கிறோம். நிர்ப்பந்தம் இல்லாத ஒரு எளிய பதில்.</p><span class="go">படிக்க →</span></a>
+<a class="card reveal" href="<?php echo esc_url(home_url('/is-the-quran-enough')); ?>"><span class="ico">📖</span><h3>குர்ஆன் போதுமானதா?</h3><p>குர்ஆன் தன்னைப் பற்றி என்ன கூறுகிறது என்பதை அமைதியாகப் பாருங்கள்.</p><span class="go">படிக்க →</span></a>
+<a class="card reveal" href="<?php echo esc_url(home_url('/check-it-yourself')); ?>"><span class="ico">🧮</span><h3>நீங்களே சரிபாருங்கள்</h3><p>ஐந்து எண்கள், ஒரு கால்குலேட்டர், ஐந்து நிமிடங்கள். யாரையும் நம்ப வேண்டியதில்லை.</p><span class="go">முயன்று பாருங்கள் →</span></a>
+</div>
+</div>
+</section>
+
+<section class="blk pm-home">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker reveal">🖼️ இன்றைய படம்</span>
+      <h2 class="reveal">குர்ஆன் படச் செய்திகள்</h2>
+      <p class="reveal">ஒரு வசனம், ஒரு படம். பதிவிறக்கி இன்று யாரோடாவது பகிருங்கள்.</p>
+    </div>
+    <style>.pm-home .pm-hc{max-width:420px;margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden}.pm-home .pm-hc img{display:block;width:100%;height:auto}.pm-home .pm-hs{background:linear-gradient(90deg,#9A6A14,#C9922B 28%,#e0b43c 52%,#e8863c 76%,#d4546a);color:#fff;text-align:center;font-weight:700;padding:7px 8px;font-size:.95rem;text-shadow:0 1px 2px rgba(0,0,0,.35)}.pm-home .pm-ha{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:14px}</style>
+    <div class="pm-hc reveal">
+      <a href="<?php echo esc_url(home_url('/picture-messages/#' . $pm)); ?>"><img loading="lazy" alt="" src="<?php echo esc_url(home_url('/picture-messages/img/?f=' . $pm)); ?>"></a>
+      <div class="pm-hs">KadavulMattum.org</div>
+      <div class="pm-ha">
+        <a class="btn btn-gold" href="<?php echo esc_url(home_url('/picture-messages/#' . $pm)); ?>">⬇ பதிவிறக்கு / பகிர்</a>
+        <a class="btn btn-ghost" href="<?php echo esc_url(home_url('/picture-messages/')); ?>">🖼️ எல்லா படங்களும்</a>
+      </div>
+    </div>
+  </div>
+</section>
+<?php endif; ?>
 <section class="blk utils">
     <div class="wrap">
         <div class="sec-head">
