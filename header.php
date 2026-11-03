@@ -44,6 +44,14 @@ if (!defined('ABSPATH')) exit;
         <span class="on">தமிழ்</span>
         <a href="https://ekkhuda.org" rel="noopener">हिंदी</a>
       </div>
+				<div class="ghlang" id="ghLang">
+					<button type="button" class="ic ghlang-btn" id="ghLangBtn" aria-label="Change language" aria-haspopup="true" aria-expanded="false"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3c2.5 2.6 3.8 5.7 3.8 9S14.5 18.4 12 21C9.5 18.4 8.2 15.3 8.2 12S9.5 5.6 12 3z"></path></svg></button>
+					<div class="ghlang-menu" role="menu"><a href="https://godalone.in" rel="noopener">English</a>
+            <span class="on">தமிழ்</span>
+            <a href="https://ekkhuda.org" rel="noopener">हिंदी</a></div>
+				</div>
+
+
       <div class="srchw" id="ghSrchw">
         <button class="ic" id="ghSearchBtn" aria-label="தேடல்" type="button">
           <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
@@ -58,3 +66,11 @@ if (!defined('ABSPATH')) exit;
   </div>
 </header>
 <main id="km-main">
+
+<script>
+(function(){var w=document.getElementById("ghLang");if(!w)return;var b=w.querySelector(".ghlang-btn");
+b.addEventListener("click",function(e){e.stopPropagation();var o=w.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");});
+document.addEventListener("click",function(e){if(!w.contains(e.target)){w.classList.remove("open");b.setAttribute("aria-expanded","false");}});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"){w.classList.remove("open");b.setAttribute("aria-expanded","false");}});
+})();
+</script>
