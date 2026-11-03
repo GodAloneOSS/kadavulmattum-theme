@@ -121,7 +121,7 @@ $km_filters = array(
 						<p class="kmb-desc"><?php echo esc_html( km_lib_pick( 'desc', $km_b, $km_lang ) ); ?></p>
 						<div class="kmb-btns">
 							<?php if ( ! empty( $km_b['download'] ) ) : ?>
-								<a class="btn btn-gold" href="<?php echo esc_url( $km_b['download'] ); ?>" target="_blank" rel="noopener">📥 இலவசப் பதிவிறக்கம்</a>
+								<a class="btn btn-gold" href="<?php echo esc_url( $km_b['download'] ); ?>" target="_blank" rel="noopener">📥 பதிவிறக்கம்</a>
 							<?php endif; ?>
 							<?php if ( ! empty( $km_b['page'] ) ) : ?>
 								<a class="btn btn-gold" href="<?php echo esc_url( $km_b['page'] ); ?>">↗️ பக்கத்தைத் திறக்க</a>
@@ -160,7 +160,7 @@ $km_filters = array(
 .kmb-card.is-hidden{display:none}
 .kmb-card:hover{transform:translateY(-6px);border-color:var(--line);box-shadow:var(--shadow)}
 .kmb-cover{position:relative;aspect-ratio:3/4;overflow:hidden;display:flex;align-items:center;justify-content:center;
-	background:radial-gradient(circle at 30% 25%,rgba(34,197,94,.20),rgba(34,197,94,.04))}
+	background:radial-gradient(circle at 30% 25%,rgba(229,185,78,.20),rgba(229,185,78,.04))}
 .kmb-cover img{width:100%;height:100%;object-fit:cover;display:block}
 .kmb-ph{font-size:2.6rem;opacity:.5}
 .kmb-pages{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.62);color:#fff;font-size:.72rem;padding:4px 9px;border-radius:999px}
