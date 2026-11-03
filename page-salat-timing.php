@@ -134,7 +134,7 @@ get_header();
 .st-btnrow .btn{flex:1 1 200px}
 .st-msg{margin-top:14px;padding:12px 14px;border-radius:10px;font-size:14.5px;
   background:rgba(248,113,113,.1);border:1px solid rgba(248,113,113,.35);color:#f87171}
-.st-msg.st-msg-loading{background:rgba(34,197,94,.1);border-color:rgba(34,197,94,.35);color:var(--ink-soft)}
+.st-msg.st-msg-loading{background:rgba(229,185,78,.1);border-color:rgba(229,185,78,.35);color:var(--ink-soft)}
 .st-suggestions{margin-top:14px;display:flex;flex-direction:column;gap:8px}
 .st-suggestion{display:block;width:100%;text-align:left;padding:12px 14px;border-radius:10px;
   border:1px solid var(--line);background:var(--bg-3);color:var(--ink);font-family:var(--font-body);
@@ -169,13 +169,13 @@ get_header();
 .st-rc-sec{padding-top:8px}
 .st-rc-card{max-width:640px;margin:0 auto;display:flex;align-items:center;gap:20px;padding:26px 28px;
   border-radius:var(--radius-lg);text-decoration:none;
-  background:linear-gradient(135deg,rgba(34,197,94,.22),rgba(21,128,61,.12) 60%,var(--panel));
-  border:1px solid rgba(34,197,94,.4);box-shadow:var(--shadow-sm);
+  background:linear-gradient(135deg,rgba(229,185,78,.22),rgba(154,106,20,.12) 60%,var(--panel));
+  border:1px solid rgba(229,185,78,.4);box-shadow:var(--shadow-sm);
   transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
-.st-rc-card:hover{transform:translateY(-2px);box-shadow:0 14px 34px -12px rgba(34,197,94,.45);border-color:var(--gold)}
+.st-rc-card:hover{transform:translateY(-2px);box-shadow:0 14px 34px -12px rgba(229,185,78,.45);border-color:var(--gold)}
 .st-rc-icon{flex:0 0 auto;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;
   font-size:28px;background:radial-gradient(circle at 32% 28%,var(--gold-bright),var(--gold-deep));
-  box-shadow:0 0 0 4px rgba(34,197,94,.15)}
+  box-shadow:0 0 0 4px rgba(229,185,78,.15)}
 .st-rc-text{flex:1 1 auto;min-width:0}
 .st-rc-title{font-family:var(--font-display);font-size:18px;color:var(--ink)}
 .st-rc-sub{margin-top:4px;color:var(--ink-soft);font-size:14px;line-height:1.5}
