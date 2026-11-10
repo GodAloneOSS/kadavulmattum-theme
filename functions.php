@@ -565,3 +565,6 @@ add_filter('template_include', function ($template) {
     }
     return $template;
 });
+
+/* Load SEO/language/security refinements (added 04-11-2026); a problem in that file cannot take the site down. */
+try { $ga_inc = get_template_directory() . "/inc-seo-fixes.php"; if (file_exists($ga_inc)) { include_once $ga_inc; } } catch (\Throwable $e) { }
