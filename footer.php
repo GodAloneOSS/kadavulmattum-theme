@@ -32,6 +32,7 @@ if (!defined('ABSPATH')) exit;
         <li><a href="<?php echo esc_url(home_url('/utilities/')); ?>">பயன்பாடுகள்</a></li>
         <li><a href="<?php echo esc_url(home_url('/charity/')); ?>">சரணடைந்தவர்கள் தர்ம ஸ்தாபனம்</a></li>
         <li><a href="<?php echo esc_url(home_url('/faq/')); ?>">அடிக்கடி கேட்கப்படும் கேள்விகள்</a></li>
+        <li><a href="<?php echo esc_url(home_url('/appendices/')); ?>">குர்ஆன் இணைப்புகள் (38)</a></li>
       </ul>
     </div>
     <div>
@@ -66,6 +67,7 @@ if (!defined('ABSPATH')) exit;
 </a>
 <button class="totop" id="ghTop" aria-label="மேலே செல்ல" type="button">↑</button>
 
+<script src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/js/ga-account.js?v=8" defer></script>
 <?php wp_footer(); ?>
 </body>
 </html>
