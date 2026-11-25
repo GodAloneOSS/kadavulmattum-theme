@@ -143,6 +143,7 @@ function km_default_menu() {
 		array('💰', 'கடமையான தர்மம் (ஜகாத்)', home_url('/zakat-calculator/')),
 		array('❓', 'குர்ஆன் கேள்வி பதில்', home_url('/quran-qa/')),
 		array('💬', 'அடிக்கடி கேட்கப்படும் கேள்விகள்', home_url('/faq/')),
+		array('💻', 'மஸ்ஜித் இந்தியா IT பிரிவு', home_url('/it-wing/')),
 		array('❤️', 'சரணடைந்தவர்கள் தர்ம ஸ்தாபனம்', home_url('/charity/')),
 		array('❓', 'குர்ஆன் கேள்வி பதில்', 'https://kadavulmattum.org/quran-qa/'),
 	);
@@ -447,6 +448,7 @@ function kh_seed_index_items() {
 		array('title' => 'வீடியோக்கள்', 'url' => home_url('/videos/'), 'excerpt' => 'திரு ரஷாத் வீடியோக்கள், ஜும்மாஹ் பயான்கள், குர்ஆன் வகுப்புகள் மற்றும் மேலும் பல.'),
 		array('title' => 'புத்தகங்கள்', 'url' => home_url('/library/'), 'excerpt' => 'தமிழில் புத்தகங்கள் மற்றும் GodAlone.in நூலகம்.'),
 		array('title' => 'கருவிகள்', 'url' => home_url('/utilities/'), 'excerpt' => '19 கால்குலேட்டர், ரமலான் கால்குலேட்டர், தொழுகை நேரம் உள்ளிட்ட இஸ்லாமிய கருவிகள்.'),
+		array('title' => 'மஸ்ஜித் இந்தியா IT பிரிவு', 'url' => home_url('/it-wing/'), 'excerpt' => 'மஸ்ஜித் இந்தியா முஸ்லிம் ஜமாத் IT பிரிவு — குழு, நிறைவு செய்த பணிகள் மற்றும் தன்னார்வலர் பதிவு.'),
 	);
 }
 
@@ -511,6 +513,7 @@ function km_route_seo() {
 	if ($map === null) {
 		$map = array(
 			'introduction' => array('அறிமுகம் — கடவுளுக்கு மட்டும் சரணடைதல் என்றால் என்ன?', 'கடவுளுக்கு மட்டும் சரணடைதல் என்ற தூய செய்திக்கு வரவேற்கிறோம் — மூன்று அடித்தளங்கள், வழிபாட்டின் ஐந்து கடமைகள், சரணடைதலில் ஒற்றுமை.'),
+			'it-wing' => array('மஸ்ஜித் இந்தியா IT பிரிவு', 'மஸ்ஜித் இந்தியா முஸ்லிம் ஜமாத் IT பிரிவு — குழு, நிறைவு செய்த பணிகள் மற்றும் நடைபெற்று வரும் திட்டங்கள்.'),
 			'faq' => array('அடிக்கடி கேட்கப்படும் கேள்விகள்', 'கடவுளுக்கு மட்டும் சரணடைதல், குர்ஆன், எங்கள் கருவிகள் பற்றிய பொதுவான கேள்விகளுக்கான எளிய பதில்கள்.'),
 			'is-this-for-me' => array('இது எனக்கானதா?', 'புதியவர்களுக்கும், ஆர்வமுள்ளவர்களுக்கும், தயக்கம் உள்ளவர்களுக்கும் ஒரு எளிய பதில். நீங்கள் யாராக இருந்தாலும், தயவுசெய்து தொடர்ந்து படியுங்கள்.'),
 			'is-the-quran-enough' => array('குர்ஆன் போதுமானதா?', 'குர்ஆன் தன்னைப் பற்றி என்ன கூறுகிறது என்பதை அமைதியாகப் பாருங்கள். படியுங்கள், பிறகு நீங்களே முடிவு செய்யுங்கள்.'),
@@ -568,3 +571,30 @@ add_filter('template_include', function ($template) {
 
 /* Load SEO/language/security refinements (added 04-11-2026); a problem in that file cannot take the site down. */
 try { $ga_inc = get_template_directory() . "/inc-seo-fixes.php"; if (file_exists($ga_inc)) { include_once $ga_inc; } } catch (\Throwable $e) { }
+
+
+/* ---- Masjid India IT Wing page (/it-wing/) — added 15-11-2026 ---- */
+add_action('init', function () {
+	add_rewrite_rule('^it-wing/?$', 'index.php?km_itwing=1', 'top');
+	if (get_option('km_itwing_rewrite_flushed') !== KM_VER) {
+		flush_rewrite_rules(false);
+		update_option('km_itwing_rewrite_flushed', KM_VER);
+	}
+}, 20);
+add_filter('query_vars', function ($vars) { $vars[] = 'km_itwing'; return $vars; });
+add_filter('template_include', function ($template) {
+	if (get_query_var('km_itwing')) {
+		$t = get_stylesheet_directory() . '/page-it-wing.php';
+		if (file_exists($t)) {
+			global $wp_query;
+			$wp_query->is_404 = false;
+			status_header(200);
+			return $t;
+		}
+	}
+	return $template;
+});
+
+
+/* IT Wing registrations (saved in this site's own database) */
+if (file_exists(get_stylesheet_directory() . '/inc-itw-registrations.php')) { require_once get_stylesheet_directory() . '/inc-itw-registrations.php'; }
